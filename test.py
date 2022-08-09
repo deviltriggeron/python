@@ -114,7 +114,14 @@
 #def multiply(num1, num2):
 #    num1 * num2
 
-result = multiply(2, 2)
-print(result)
+
+#print('Did Joffrey agree?')
+#print('He did. He also said "I love using \\n"')
 
 
+#print('-Did Joffrey agree?\n-He did. He also said "I love using \\n"')
+
+king = 'King Balon the 6th'
+kings = 6
+castle = 17
+print(king + ' has ' + str(kings * castle) + ' rooms.')

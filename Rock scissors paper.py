@@ -1,5 +1,5 @@
 game = 'rock.scissors.paper'
-
+#try win))
 while True:
     rsp = input('choose number "rock = 1" "scissors = 2", "paper = 3"\n')
     if rsp == "1":
@@ -14,5 +14,4 @@ while True:
         exit(game)
     else:
         print("choose again, think\n")
-
 

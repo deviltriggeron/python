@@ -114,6 +114,9 @@
 #def multiply(num1, num2):
 #    num1 * num2
 
+#result = multiply(2, 2)
+#print(result)
+
 
 #print('Did Joffrey agree?')
 #print('He did. He also said "I love using \\n"')
@@ -121,7 +124,26 @@
 
 #print('-Did Joffrey agree?\n-He did. He also said "I love using \\n"')
 
-king = 'King Balon the 6th'
-kings = 6
-castle = 17
-print(king + ' has ' + str(kings * castle) + ' rooms.')
+
+#king = 'King Balon the 6th'
+#kings = 6
+#castle = 17
+#print(king + ' has ' + str(kings * castle) + ' rooms.')
+
+
+#first_name = '          Grigor        \n'
+#first_name = first_name.strip()
+#print(first_name)
+
+
+#def say_hurray_three_times():
+#   result = 'hurray! hurray! hurray!'
+#   print(result)
+#say_hurray_three_times()
+
+#import random
+#print(random.randint(0, 1000))
+
+
+
+

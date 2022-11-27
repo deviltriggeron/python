@@ -1,5 +1,6 @@
 import random
 
+
 def game():
     while True:
         spisok = ['rock', 'scissors', 'paper']

@@ -145,5 +145,29 @@
 #print(random.randint(0, 1000))
 
 
-
-
+a = input()
+b = input()
+c = input()
+lenght1 = (len(a))
+lenght2 = (len(b))
+lenght3 = (len(c))
+r1 = max(lenght1, lenght2, lenght3)
+r2 = min(lenght1, lenght2, lenght3)
+if r1 == lenght1 and r2 == lenght2:
+    print(a)
+    print(b)
+elif r1 == lenght2 and r2 == lenght3:
+    print(b)
+    print(c)
+elif r1 == lenght3 and r2 == lenght1:
+    print(c)
+    print(a)
+elif r1 == lenght1 and r2 == lenght3:
+    print(a)
+    print(c)
+elif r1 == lenght3 and r2 == lenght2:
+    print(c)
+    print(b)
+elif r1 == lenght2 and r2 == lenght1:
+    print(b)
+    print(a)

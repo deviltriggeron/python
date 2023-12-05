@@ -1,7 +1,7 @@
 import telebot
 from telebot import types
 import random
-
+from aiogram.types.message import ContentType
 
 TOKEN = '5451283068:AAF9J6CVNsy8W4WY9vovaGbKWYuowh4M0j0'
 bot = telebot.TeleBot(TOKEN)
@@ -67,33 +67,15 @@ def button(message):
             bot.send_message(message.chat.id, 'You lose!\nTry again? or if you are scared then click "Back"')
         elif ais == 'paper':
             bot.send_message(message.chat.id, 'Draw\nTry again? or click "Back" to leave')
-    elif message.text == 'Hangman':
-        WORDS = ['интернет', 'пятно', 'бизнес', 'неделя', 'червь', 'доширак']
-        word = random.choice(WORDS)
-        so_far = "*" * len(word)
-        wrong = [0]
-        used = [0]
-        bot.send_message(message.chat.id, 'This game hangman, write letter')
-        bot.send_photo(message.chat.id, open('hangman photo/Hangman-0.png', 'rb'))
-        bot.send_message(message.chat.id, "Введите букву: ")
-        guess = message.text.upper()
-        while guess in used:
-            bot.send_message(message.chat.id, "Вы уже предлагали букву: ", guess)
-            guess = bot.send_message(message.chat.id, "Введите букву: ")
-            guess = guess.upper()
-        used.append(guess)
-        if guess in word:
-            bot.send_message(message.chat.id, 'Да', guess, 'буква есть в слове')
-            new = ""
-            for i in range(len(word)):
-                if guess == word[i]:
-                    new += guess
-                else:
-                    new += so_far[i]
-            so_far = new
-        else:
-            bot.send_message(message.chat.id, 'К сожалению данной буквы нет в слове')
-            wrong += 1
+    # elif message.text == 'Hangman':
+    #     WORDS = ['интернет', 'пятно', 'бизнес', 'неделя', 'червь', 'доширак']
+    #     word = random.choice(WORDS)
+    #     so_far = "*" * len(word)
+    #     wrong = [0]
+    #     used = [0]
+    #     bot.send_message(message.chat.id, 'This game hangman, write letter')
+    #     bot.send_photo(message.chat.id, open('hangman photo/Hangman-0.png', 'rb'))
+    #     bot.send_message(message.chat.id, "Введите букву: ")
     elif message.text == 'Back':
         keyboard = types.ReplyKeyboardMarkup(resize_keyboard=True)
         item1 = types.KeyboardButton('Random number')

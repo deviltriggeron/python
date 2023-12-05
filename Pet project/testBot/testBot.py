@@ -3,7 +3,6 @@ from telebot import types
 import random
 from aiogram.types.message import ContentType
 
-TOKEN = '5451283068:AAF9J6CVNsy8W4WY9vovaGbKWYuowh4M0j0'
 bot = telebot.TeleBot(TOKEN)
 
 

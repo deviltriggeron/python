@@ -1,42 +1,42 @@
 calc = 'calc.py'
 
 while True:
-    what = input( ' whats doing? (+, -, *, /): ')
+    what = input('whats doing? (+, -, *, /): ')
 
     if what == "+":
-        a = float(input("choose first number: "))
-        b = float(input("choose second number: "))
+        a = int(input("choose first number: "))
+        b = int(input("choose second number: "))
         c = a + b
-        print('result : ' + str(c).rstrip('.0'))
+        print('result : ', c)
     elif what == "-":
-        a = float(input("choose first number: "))
-        b = float(input("choose second number: "))
+        a = int(input("choose first number: "))
+        b = int(input("choose second number: "))
         c = a - b
-        print('result : ' + str(c).rstrip('.0'))
+        print('result : ', c)
     elif what == "*":
-        a = float(input("choose first number: "))
-        b = float(input("choose second number: "))
+        a = int(input("choose first number: "))
+        b = int(input("choose second number: "))
         c = a * b
-        print('result : ' + str(c).rstrip('.0'))
+        print('result : ', c)
     elif what == "/":
-        a = float(input("choose first number: "))
-        b = float(input("choose second number: "))
+        a = int(input("choose first number: "))
+        b = int(input("choose second number: "))
         c = a / b
-        print('result : ' + str(c).rstrip('.0'))
+        print('result : ', c)
     elif what == "%":
-        a = float(input("choose first number: "))
-        b = float(input("choose second number: "))
+        a = int(input("choose first number: "))
+        b = int(input("choose second number: "))
         c = a % b
-        print('result : ' + str(c).rstrip('.0'))
+        print('result : ', c)
     elif what == "**":
-        a = float(input("choose first number: "))
-        b = float(input("choose second number: "))
+        a = int(input("choose first number: "))
+        b = int(input("choose second number: "))
         c = a ** b
-        print('result : ' + str(c).rstrip('.0'))
+        print('result : ', c)
     elif what == "//":
-        a = float(input("choose first number: "))
-        b = float(input("choose second number: "))
+        a = int(input("choose first number: "))
+        b = int(input("choose second number: "))
         c = a // b
-        print('result : ' + str(c).rstrip('.0'))
+        print('result : ', c)
     else:
         print('ERROR!')
